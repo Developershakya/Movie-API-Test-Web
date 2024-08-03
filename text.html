@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a div element
+var containerDiv = document.createElement("div");
+
+// Create an image element
+var imageElement = document.createElement("img");
+imageElement.src = "IMG_20220508_213807.jpg"; // Set the image source
+imageElement.alt = "Image Alt Text"; // Set the alt text for accessibility
+imageElement.style.width = "100%"; // Set image width to fill the container
+
+// Create a paragraph element for text
+var textElement = document.createElement("p");
+textElement.textContent = "Your Text Here"; // Set the text content
+
+// Style the text to float on top of the image
+textElement.style.position = "absolute";
+textElement.style.top = "50%"; // Adjust vertical position as needed
+textElement.style.left = "50%"; // Adjust horizontal position as needed
+textElement.style.transform = "translate(-50%, -50%)"; // Center the text horizontally and vertically
+textElement.style.color = "white"; // Set text color
+
+// Append the image and text elements to the container div
+containerDiv.appendChild(imageElement);
+containerDiv.appendChild(textElement);
+
+// Append the container div to the document body or another parent element
+document.body.appendChild(containerDiv);
+    </script>
+</body>
+</html>
